@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ne Yapayım?</title>
 
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+margin:0;
+padding:20px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+h1{
+text-align:center;
+color:#4ade80;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+margin-top:20px;
+}
+
+select,button{
+width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:8px;
+border:none;
+}
+
+button{
+background:#22c55e;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+.result{
+margin-top:20px;
+padding:15px;
+background:#334155;
+border-radius:10px;
+}
+
+a{
+color:#60a5fa;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Ne Yapayım?</h1>
+
+<div class="card">
+
+<h2>Cihaz Seç</h2>
+
+<select id="device">
+<option>iPhone 15 Pro Max</option>
+<option>iPhone 14 Pro</option>
+<option>iPhone 13</option>
+<option>Galaxy S25 Ultra</option>
+<option>Galaxy S24 Ultra</option>
+<option>Galaxy S23</option>
+<option>MacBook Air M3</option>
+<option>MacBook Pro M2</option>
+<option>iPad Pro M4</option>
+<option>Galaxy Tab S10 Ultra</option>
+</select>
+
+<select id="condition">
+<option value="good">Çalışıyor</option>
+<option value="broken">Arızalı</option>
+</select>
+
+<button onclick="analyze()">
+Ne Yapmalıyım?
+</button>
+
+<div id="result" class="result">
+Sonuç burada görünecek.
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function analyze(){
+
+const condition =
+document.getElementById("condition").value;
+
+let text = "";
+
+if(condition==="good"){
+text=`
+<h3>Öneriler</h3>
+✅ Sahibinden'de sat<br><br>
+✅ Letgo'da sat<br><br>
+✅ Bağış yap<br><br>
+<a href="https://www.google.com/maps/search/ikinci+el+telefon" target="_blank">
+Yakındaki satış noktaları
+</a>
+`;
+}
+else{
+text=`
+<h3>Öneriler</h3>
+🔧 Tamir ettir<br><br>
+♻️ Elektronik atık noktasına götür<br><br>
+<a href="https://www.google.com/maps/search/telefon+tamircisi" target="_blank">
+Yakındaki tamirciler
+</a>
+`;
+}
+
+document.getElementById("result").innerHTML=text;
+
+}
+
+</script>
+
+</body>
+</html>
