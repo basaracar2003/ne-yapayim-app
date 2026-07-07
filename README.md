@@ -52,3 +52,27 @@ npm run build
 **Basar Acar**  
 Management Student  
 University of Nottingham
+
+## 📸 Screenshots
+
+### Home
+
+![Home](home.png)
+
+---
+
+### Recommendation
+
+![Recommendation](recommendation.png)
+
+---
+
+### Valuation
+
+![Valuation](valuation.png)
+
+---
+
+### Marketplace Integration
+
+![Marketplace](marketplaces.png)
