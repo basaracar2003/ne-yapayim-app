@@ -57,22 +57,22 @@ University of Nottingham
 
 ### Home
 
-![Home](home.png)
+![Home](assets/home.png)
 
 ---
 
 ### Recommendation
 
-![Recommendation](recommendation.png)
+![Recommendation](assets/recommendation.png)
 
 ---
 
 ### Valuation
 
-![Valuation](valuation.png)
+![Valuation](assets/valuation.png)
 
 ---
 
 ### Marketplace Integration
 
-![Marketplace](marketplaces.png)
+![Marketplace](assets/marketplaces.png)
